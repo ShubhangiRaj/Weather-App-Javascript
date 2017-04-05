@@ -1,11 +1,11 @@
 // call this function on DOM ready
 $(document).ready(function(){
 
-	// on displayLocalData click call this function
+	// on displayLocalData button click call this function
 	$("#clickLocalWeather").click(function(){
 		var openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather'
-		if (window.navigator && window.navigator.geolocation) {
-		    window.navigator.geolocation.getCurrentPosition(function(position) {
+		if (navigator && navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(function(position) {
 		        $.getJSON(openWeatherMap, {
 		            lat: position.coords.latitude,
 		            lon: position.coords.longitude,
@@ -30,7 +30,6 @@ $(document).ready(function(){
 
 			// will be making an AJAX request can use also $.getJSON()
 			// in this ex will be using $.ajax()
-
 			
 
 			$.getJSON({

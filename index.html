@@ -2,24 +2,36 @@
 <html>
 <head>
 	<title>Weather App</title>
+	<!-- adding css -->
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+
+	<!-- wrapper div -->
 	<div class="wrapperClass">
+
+		<!-- heading for the page -->
 		<h1>Get current weather</h1>
+
+		<!-- div for displaying local weather on button click -->
 		<div id="displayDataOfUserLocation">
 			<button id="clickLocalWeather">Weather at your location</button>
 			<div id="displayLocalData"></div>
 		</div>
+
+		</br>
+
+		<!-- div for displaying weather based on input value -->
 		<div>
 			<input type="text" name="city" id="city" placeholder="Enter city name" required/>
 			<span id="error"></span>
 			<button id="submitCity">Search City</button>
+			<div id="displayData"></div>
 		</div>
-		<div id="displayData"></div>
-		
+
 	</div>
 
+	<!-- adding scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="index.js"></script>
 
